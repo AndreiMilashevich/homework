@@ -6,13 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnInit {
-  
+
   @Input() userName: string;
   @Input() buttonName: string;
 
 
 
-  
+
 
   constructor() { }
 

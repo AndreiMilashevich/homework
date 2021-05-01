@@ -10,7 +10,6 @@ export class InfoComponent implements OnInit {
   @Input() infoTitle: string;
   @Input() infoText: string;
   @Input() buttonName: string;
-  
 
   constructor() { }
 

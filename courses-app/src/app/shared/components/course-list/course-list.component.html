@@ -1,0 +1,11 @@
+<div class="course-list__wrapper">
+  <app-course-card *ngFor="let course of coursesData"
+    [id]="course.id"
+    [title]="course.title"
+    [description]="course.description"
+    [creationDate]="course.creationDate"
+    [duration]="course.duration"
+    [authors]="course.authors">
+    <app-button buttonName="Show course"></app-button>
+  </app-course-card>
+</div>
