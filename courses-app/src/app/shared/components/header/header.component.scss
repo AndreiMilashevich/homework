@@ -1,0 +1,16 @@
+header {
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 15px;
+    width: 45px;
+    height: 45px;
+    background-image: url('../../../../assets/logo.png');
+    background-size: contain;
+    cursor: pointer;
+}
