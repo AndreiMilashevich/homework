@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { info } from '../../shared/mockData'
+import { info } from 'src/app/shared/constants/mockData';
 
 @Component({
   selector: 'app-courses',
@@ -9,7 +8,7 @@ import { info } from '../../shared/mockData'
 })
 export class CoursesComponent implements OnInit {
 
-  info = info
+  info = info;
 
   constructor() { }
 

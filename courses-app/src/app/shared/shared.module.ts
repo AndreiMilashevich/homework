@@ -8,6 +8,7 @@ import { DurationPipe } from './pipes/duration.pipe';
 import { HeaderComponent, ButtonComponent, InfoComponent, SearchComponent, InfoItemComponent } from './components/index';
 
 const components = [
+  InfoItemComponent,
   HeaderComponent,
   ButtonComponent,
   InfoComponent,

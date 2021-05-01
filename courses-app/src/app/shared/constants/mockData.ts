@@ -22,3 +22,9 @@ export const mockedCourseList = [
       authors: ['Anna Sidorenko', 'Valentina Larina'],
     },
   ];
+
+export const info = {
+    title: 'Your list is empty',
+    text: `Please use the 'Add new course' button and add your first course`,
+    button: 'Add new course'
+  };
