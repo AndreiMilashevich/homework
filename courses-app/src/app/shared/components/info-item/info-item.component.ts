@@ -1,11 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-info',
-  templateUrl: './info.component.html',
-  styleUrls: ['./info.component.scss']
+  selector: 'app-info-item',
+  templateUrl: './info-item.component.html',
+  styleUrls: ['./info-item.component.scss']
 })
-export class InfoComponent implements OnInit {
+export class InfoItemComponent implements OnInit {
 
   @Input() infoTitle: string;
   @Input() infoText: string;

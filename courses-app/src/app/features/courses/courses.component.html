@@ -1,5 +1,8 @@
 <app-header>
     <app-button userName="Dave" buttonName="Login"></app-button>
 </app-header>
-<app-info></app-info>
+<app-info>
+    <app-info-item [infoTitle]="info.title" [infoText]="info.text" [buttonName]="info.button"></app-info-item>
+</app-info>
 <app-course-list></app-course-list>
+
