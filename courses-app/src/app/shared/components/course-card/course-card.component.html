@@ -9,6 +9,8 @@
       <p class="card-info-group__item"><b>Duration:</b> {{ duration | duration }}</p>
       <p class="card-info-group__item"><b>Created:</b> {{ creationDate | date:'dd.MM.yyyy' }}</p>
     </div>
-    <ng-content></ng-content>
+    <div class="card-info-buttons">
+      <ng-content></ng-content>
+    </div>
   </div>
 </div>

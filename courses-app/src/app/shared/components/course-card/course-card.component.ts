@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-course-card',
@@ -13,6 +14,9 @@ export class CourseCardComponent implements OnInit {
   @Input() creationDate: string;
   @Input() duration: number;
   @Input() authors: string;
+  @Input() editable: boolean;
+
+  faCoffee = faCoffee;
 
   constructor() { }
 

@@ -10,6 +10,7 @@ export const mockedCourseList = [
       creationDate: '8/3/2021',
       duration: 160,
       authors: ['Vasiliy Dobkin', 'Nicolas Kim'],
+      editable: true,
     },
     {
       id: 'b5630fdd-7bf7-4d39-b75a-2b5906fd0916',
@@ -20,6 +21,7 @@ export const mockedCourseList = [
       creationDate: '10/11/2020',
       duration: 210,
       authors: ['Anna Sidorenko', 'Valentina Larina'],
+      editable: false,
     },
   ];
 

@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { mockedCourseList } from '../../constants/mockData';
-
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-course-list',
@@ -9,12 +7,12 @@ import { mockedCourseList } from '../../constants/mockData';
 })
 export class CourseListComponent implements OnInit {
 
-  coursesData =  mockedCourseList;
+  @Input() coursesData;
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.coursesData);
+
   }
 
 }
