@@ -15,6 +15,7 @@ export class InfoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
