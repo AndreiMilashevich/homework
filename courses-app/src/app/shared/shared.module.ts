@@ -5,10 +5,9 @@ import { CourseListComponent } from './components/course-list/course-list.compon
 import { JoinPipe } from './pipes/join.pipe';
 import { DurationPipe } from './pipes/duration.pipe';
 
-import { HeaderComponent, ButtonComponent, InfoComponent, SearchComponent, InfoItemComponent } from './components/index';
+import { HeaderComponent, ButtonComponent, InfoComponent, SearchComponent } from './components/index';
 
 const components = [
-  InfoItemComponent,
   HeaderComponent,
   ButtonComponent,
   InfoComponent,
