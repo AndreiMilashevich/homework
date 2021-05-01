@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent, ButtonComponent, InfoComponent, SearchComponent,  } from './components/index';
-
+import { HeaderComponent, ButtonComponent, InfoComponent, SearchComponent, InfoItemComponent } from './components/index';
 
 const components = [
   HeaderComponent,
   ButtonComponent,
   InfoComponent,
-  SearchComponent
+  SearchComponent,
+  InfoItemComponent
 ]
 
 @NgModule({
   declarations: [
-    ...components,
-    
-      
+    ...components,    
   ],
   imports: [
     CommonModule
