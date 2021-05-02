@@ -30,3 +30,10 @@ export const info = {
     text: `Please use the 'Add new course' button and add your first course`,
     button: 'Add new course'
   };
+
+export const MODAL_WINDOW_CONFIG = {
+  title: 'Modal Window',
+  message: 'Do you like learning Angular?)',
+  buttonOk: 'OK',
+  buttonCancel: 'CANCEL'
+};

@@ -1,4 +1,11 @@
 <header>
     <div class="logo"></div>
+    <button class="modal-window-button" (click)="openModalWindow()">Show modal window</button>
+    <app-modal-window *ngIf="getModalWindowState()"
+      [title]="modalWindowData.title"
+      [message]="modalWindowData.message"
+      [buttonOk]="modalWindowData.buttonOk"
+      [buttonCancel]="modalWindowData.buttonCancel">
+    </app-modal-window>
     <ng-content></ng-content>
 </header>

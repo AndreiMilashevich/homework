@@ -1,2 +1,6 @@
 <span>{{ userName }}</span>
-<button>{{buttonName}}</button>
+<button>{{buttonName}}
+  <fa-icon *ngIf="iconName === 'pencil'" [icon]="pencil"></fa-icon>
+  <fa-icon *ngIf="iconName === 'trash'" [icon]="trash"></fa-icon>
+  <fa-icon *ngIf="iconName === 'times'" [icon]="times"></fa-icon>
+</button>

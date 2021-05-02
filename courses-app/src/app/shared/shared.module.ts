@@ -4,8 +4,9 @@ import { CourseCardComponent } from './components/course-card/course-card.compon
 import { CourseListComponent } from './components/course-list/course-list.component';
 import { JoinPipe } from './pipes/join.pipe';
 import { DurationPipe } from './pipes/duration.pipe';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent, ButtonComponent, InfoComponent, SearchComponent } from './components/index';
+import { ModalWindowComponent } from './components/modal-window/modal-window.component';
 
 const components = [
   HeaderComponent,
@@ -25,9 +26,11 @@ const customPipes = [
   declarations: [
     ...components,
     ...customPipes,
+    ModalWindowComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FontAwesomeModule
   ],
   exports: [
     ...components

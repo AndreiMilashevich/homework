@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderService } from 'src/app/services/header.service';
+import { MODAL_WINDOW_CONFIG } from '../../constants/mockData';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  modalWindowData = this.headerService.modalWindowData;
 
-  ngOnInit(): void {
+  constructor(private headerService: HeaderService) { }
+
+  ngOnInit(): void { }
+
+  getModalWindowState(): boolean {
+    return this.headerService.isModalWindowVisible;
+  }
+
+  openModalWindow(): void {
+    this.headerService.openModalWindow();
+  }
+
+  closeModalWindow(): void {
+    this.headerService.closeModalWindow();
+  }
+
+  closeModalWindowByOverlay(event: MouseEvent): void {
+    this.headerService.closeModalWindowByOverlay(event);
   }
 
 }

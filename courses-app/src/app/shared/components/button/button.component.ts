@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { faPencilAlt, faTimes, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-button',
@@ -9,6 +10,11 @@ export class ButtonComponent implements OnInit {
 
   @Input() userName: string;
   @Input() buttonName: string;
+  @Input() iconName: string;
+
+  trash = faTrashAlt;
+  pencil = faPencilAlt;
+  times = faTimes;
 
 
 

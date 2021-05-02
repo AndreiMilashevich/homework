@@ -8,5 +8,7 @@
     [authors]="course.authors"
     [editable]="course.editable">
     <app-button buttonName="Show course"></app-button>
+    <app-button *ngIf="course.editable" iconName="pencil"></app-button>
+    <app-button *ngIf="course.editable" iconName="trash"></app-button>
   </app-course-card>
 </div>

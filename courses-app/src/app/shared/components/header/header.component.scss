@@ -4,6 +4,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -13,4 +15,26 @@ header {
     background-image: url('../../../../assets/logo.png');
     background-size: contain;
     cursor: pointer;
+}
+
+.modal-window-button {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  outline: none;
+  border: solid 1px red;
+  cursor: pointer;
+  padding: 5px;
+
+  &:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+    box-shadow: 0 0 5px red;
+    border-radius: 5px;
+  }
+
+  &:active {
+      background-color: rgb(255, 72, 81);
+      color: white;
+  }
 }
